@@ -1,0 +1,13 @@
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\bin\Debug\netcoreapp3.1\Shop.Interfaces.deps.json
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\bin\Debug\netcoreapp3.1\Shop.Interfaces.dll
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\obj\Debug\netcoreapp3.1\Shop.Interfaces.csprojAssemblyReference.cache
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\obj\Debug\netcoreapp3.1\Shop.Interfaces.AssemblyInfoInputs.cache
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\obj\Debug\netcoreapp3.1\Shop.Interfaces.AssemblyInfo.cs
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\bin\Debug\netcoreapp3.1\Shop.Interfaces.runtimeconfig.json
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\bin\Debug\netcoreapp3.1\Shop.Interfaces.runtimeconfig.dev.json
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\bin\Debug\netcoreapp3.1\Shop.Interfaces.pdb
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\bin\Debug\netcoreapp3.1\Shop.Entities.dll
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\bin\Debug\netcoreapp3.1\Shop.Entities.pdb
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\obj\Debug\netcoreapp3.1\Shop.Interfaces.csproj.CopyComplete
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\obj\Debug\netcoreapp3.1\Shop.Interfaces.dll
+C:\Users\rahim\source\repos\Shop\Shop.Interfaces\obj\Debug\netcoreapp3.1\Shop.Interfaces.pdb

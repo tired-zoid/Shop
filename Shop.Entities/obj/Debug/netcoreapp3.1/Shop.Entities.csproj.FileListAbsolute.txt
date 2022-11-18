@@ -1,0 +1,10 @@
+C:\Users\rahim\source\repos\Shop\Shop.Entities\bin\Debug\netcoreapp3.1\Shop.Entities.deps.json
+C:\Users\rahim\source\repos\Shop\Shop.Entities\bin\Debug\netcoreapp3.1\Shop.Entities.dll
+C:\Users\rahim\source\repos\Shop\Shop.Entities\obj\Debug\netcoreapp3.1\Shop.Entities.AssemblyInfoInputs.cache
+C:\Users\rahim\source\repos\Shop\Shop.Entities\obj\Debug\netcoreapp3.1\Shop.Entities.AssemblyInfo.cs
+C:\Users\rahim\source\repos\Shop\Shop.Entities\bin\Debug\netcoreapp3.1\Shop.Entities.runtimeconfig.json
+C:\Users\rahim\source\repos\Shop\Shop.Entities\bin\Debug\netcoreapp3.1\Shop.Entities.runtimeconfig.dev.json
+C:\Users\rahim\source\repos\Shop\Shop.Entities\bin\Debug\netcoreapp3.1\Shop.Entities.pdb
+C:\Users\rahim\source\repos\Shop\Shop.Entities\obj\Debug\netcoreapp3.1\Shop.Entities.dll
+C:\Users\rahim\source\repos\Shop\Shop.Entities\obj\Debug\netcoreapp3.1\Shop.Entities.pdb
+C:\Users\rahim\source\repos\Shop\Shop.Entities\obj\Debug\netcoreapp3.1\Shop.Entities.csprojAssemblyReference.cache

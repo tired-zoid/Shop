@@ -1,0 +1,16 @@
+C:\Users\rahim\source\repos\Shop\Shop.Services\bin\Debug\netcoreapp3.1\Shop.Services.deps.json
+C:\Users\rahim\source\repos\Shop\Shop.Services\bin\Debug\netcoreapp3.1\Shop.Services.dll
+C:\Users\rahim\source\repos\Shop\Shop.Services\obj\Debug\netcoreapp3.1\Shop.Services.AssemblyInfoInputs.cache
+C:\Users\rahim\source\repos\Shop\Shop.Services\obj\Debug\netcoreapp3.1\Shop.Services.AssemblyInfo.cs
+C:\Users\rahim\source\repos\Shop\Shop.Services\bin\Debug\netcoreapp3.1\Shop.Entities.dll
+C:\Users\rahim\source\repos\Shop\Shop.Services\bin\Debug\netcoreapp3.1\Shop.Interfaces.dll
+C:\Users\rahim\source\repos\Shop\Shop.Services\bin\Debug\netcoreapp3.1\Shop.Interfaces.pdb
+C:\Users\rahim\source\repos\Shop\Shop.Services\bin\Debug\netcoreapp3.1\Shop.Entities.pdb
+C:\Users\rahim\source\repos\Shop\Shop.Services\obj\Debug\netcoreapp3.1\Shop.Services.csproj.CopyComplete
+C:\Users\rahim\source\repos\Shop\Shop.Services\bin\Debug\netcoreapp3.1\Shop.Services.pdb
+C:\Users\rahim\source\repos\Shop\Shop.Services\obj\Debug\netcoreapp3.1\Shop.Services.dll
+C:\Users\rahim\source\repos\Shop\Shop.Services\obj\Debug\netcoreapp3.1\Shop.Services.pdb
+C:\Users\rahim\source\repos\Shop\Shop.Services\bin\Debug\netcoreapp3.1\Shop.DAL.dll
+C:\Users\rahim\source\repos\Shop\Shop.Services\bin\Debug\netcoreapp3.1\Shop.DAL.pdb
+C:\Users\rahim\source\repos\Shop\Shop.Services\obj\Debug\netcoreapp3.1\Shop.Services.csprojAssemblyReference.cache
+C:\Users\rahim\source\repos\Shop\Shop.Services\bin\Debug\netcoreapp3.1\NLog.config

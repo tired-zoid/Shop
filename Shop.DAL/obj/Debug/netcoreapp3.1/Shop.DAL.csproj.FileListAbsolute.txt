@@ -1,0 +1,16 @@
+C:\Users\rahim\source\repos\Shop\Shop.DAL\bin\Debug\netcoreapp3.1\Shop.DAL.deps.json
+C:\Users\rahim\source\repos\Shop\Shop.DAL\bin\Debug\netcoreapp3.1\Shop.DAL.dll
+C:\Users\rahim\source\repos\Shop\Shop.DAL\obj\Debug\netcoreapp3.1\Shop.DAL.csprojAssemblyReference.cache
+C:\Users\rahim\source\repos\Shop\Shop.DAL\obj\Debug\netcoreapp3.1\Shop.DAL.AssemblyInfoInputs.cache
+C:\Users\rahim\source\repos\Shop\Shop.DAL\obj\Debug\netcoreapp3.1\Shop.DAL.AssemblyInfo.cs
+C:\Users\rahim\source\repos\Shop\Shop.DAL\bin\Debug\netcoreapp3.1\Shop.DAL.runtimeconfig.json
+C:\Users\rahim\source\repos\Shop\Shop.DAL\bin\Debug\netcoreapp3.1\Shop.DAL.runtimeconfig.dev.json
+C:\Users\rahim\source\repos\Shop\Shop.DAL\bin\Debug\netcoreapp3.1\Shop.Entities.dll
+C:\Users\rahim\source\repos\Shop\Shop.DAL\bin\Debug\netcoreapp3.1\Shop.Interfaces.dll
+C:\Users\rahim\source\repos\Shop\Shop.DAL\bin\Debug\netcoreapp3.1\Shop.DAL.pdb
+C:\Users\rahim\source\repos\Shop\Shop.DAL\bin\Debug\netcoreapp3.1\Shop.Interfaces.pdb
+C:\Users\rahim\source\repos\Shop\Shop.DAL\bin\Debug\netcoreapp3.1\Shop.Entities.pdb
+C:\Users\rahim\source\repos\Shop\Shop.DAL\obj\Debug\netcoreapp3.1\Shop.DAL.csproj.CopyComplete
+C:\Users\rahim\source\repos\Shop\Shop.DAL\obj\Debug\netcoreapp3.1\Shop.DAL.dll
+C:\Users\rahim\source\repos\Shop\Shop.DAL\obj\Debug\netcoreapp3.1\Shop.DAL.pdb
+C:\Users\rahim\source\repos\Shop\Shop.DAL\bin\Debug\netcoreapp3.1\NLog.config
