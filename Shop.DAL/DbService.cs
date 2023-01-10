@@ -1,15 +1,11 @@
-﻿
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Shop.Entities;
 using Shop.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Web.Http.ModelBinding;
 
 namespace Shop.DAL
 {
@@ -22,10 +18,20 @@ namespace Shop.DAL
             _data = data;
         }
 
-        public IActionResult CreateProduct(Product product)
+        public IActionResult CreateProduct(Product product, IFormFile uploadedFile)
         {
           var response =  new Response();
-            
+
+            if (uploadedFile != null)
+            {
+                string guid = Guid.NewGuid().ToString();
+                string path = @"C:/Users/rahim/source/repos/Shop/Shop/ClientApp/src/assets/";
+                product.Img = guid +".jpg";
+                using (var fileStream = new FileStream(Path.Combine(path, guid + ".jpg"), FileMode.Create))
+                {
+                    uploadedFile.CopyTo(fileStream);
+                }
+            }
             try
             {
                 _data.Set<Product>().Add(product);
@@ -36,6 +42,20 @@ namespace Shop.DAL
             catch (DbUpdateException e)
             {
                 return new BadRequestObjectResult(response.Error());         
+            }
+        }
+
+        public void AddFile(IFormFile uploadedFile)
+        {
+            if (uploadedFile != null)
+            {
+                string guid = Guid.NewGuid().ToString();
+                string path = @"C:/Users/rahim/source/repos/Shop/Shop/ClientApp/src/assets/";
+
+                using (var fileStream = new FileStream(Path.Combine(path, guid + ".jpg"), FileMode.Create))
+                {
+                    uploadedFile.CopyTo(fileStream);
+                }
             }
         }
 
@@ -116,19 +136,7 @@ namespace Shop.DAL
                 .Take(pageParameters.PageSize);
         }
 
-        public void AddFile(IFormFile uploadedFile)
-        {
-            if (uploadedFile != null)
-            {
-                string guid = Guid.NewGuid().ToString();
-                string path = @"C:/Users/rahim/source/repos/Shop/Shop/ClientApp/src/assets/";
-
-                using (var fileStream = new FileStream(Path.Combine(path, guid + ".jpg"), FileMode.Create))
-                {
-                    uploadedFile.CopyTo(fileStream);
-                }
-            }       
-        }
+       
 
         //добавим сюда коммент для гита 
 

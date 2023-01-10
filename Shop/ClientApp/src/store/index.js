@@ -138,7 +138,7 @@ export default new Vuex.Store({
       commit('SET_STATE', product);
     },
     ADD_PRODUCT_TO_API({commit}, product) {
-        axios.post('http://localhost:65071/product', product) 
+        axios.post('http://localhost:65071/product/create', product) 
       .then((response) => {
         commit('ADD_PRODUCT', response.data)
       })

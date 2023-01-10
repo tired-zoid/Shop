@@ -1,6 +1,6 @@
 <template>
     <div class="v-catalog-new-item">
-        <v-form  @submit.prevent="allLoad" ref="newItemForm" id="new-item-form" v-model="formValidity">
+        <v-form  @submit.prevent="addNewItem" ref="newItemForm" id="new-item-form" v-model="formValidity">
 
         <v-row justify-space-between row class="v-new-item-form">    
             <v-col>      
@@ -97,14 +97,14 @@ export default {
 
     methods: {
         addNewItem () {
-                var np = {  name: this.name, 
-                        price: parseInt(this.price), 
-                        img: this.selectedFile.name, 
-                        productQuantity: parseInt(this.productQuantity),
-                        categoryId: parseInt(this.category),
-                        article:  parseInt(this.article) }
-            this.ADD_PRODUCT_TO_API(np)          
-            this.imageUpload()          
+                // var np = {  name: this.name, 
+                //         price: parseInt(this.price), 
+                //         img: this.selectedFile.name, 
+                //         productQuantity: parseInt(this.productQuantity),
+                //         categoryId: parseInt(this.category),
+                //         article:  parseInt(this.article) }
+            //this.ADD_PRODUCT_TO_API(np)  // загрузку фото и продукта в одном методе         
+            this.allLoad()         
             this.resetForm()
         },
         ...mapActions ([
@@ -131,24 +131,41 @@ export default {
         },
 
         allLoad() {
+            var np = {  name: this.name, 
+            price: parseInt(this.price), 
+            img: this.selectedFile.name, 
+            productQuantity: parseInt(this.productQuantity),
+            categoryId: parseInt(this.category),
+            article:  parseInt(this.article) }
             var fd = new FormData()
+            fd.append('data', JSON.stringify(np));
+            // fd.append('name', this.name)
+            // fd.append('price', parseInt(this.price))
+            // fd.append('img', this.selectedFile.name)
+            // fd.append('productQuantity', parseInt(this.productQuantity))
+            // fd.append('categoryId', parseInt(this.category))
+            // fd.append('article', parseInt(this.article))
             fd.append('image', this.selectedFile)
-            var options = { content: fd };
+            
+            //var options = { content: fd, np };
 
 
-            // var np = {  name: this.name, 
-            // price: parseInt(this.price), 
-            // img: this.selectedFile.name, 
-            // productQuantity: parseInt(this.productQuantity),
-            // categoryId: parseInt(this.category),
-            // article:  parseInt(this.article) }
-
-            axios.post(`http://localhost:65071/product/create`,  options ) 
-                .then(response => 
-                    console.log(response))
-                .catch((error) => {
-                    console.log(error)
-      })
+            axios({
+        method: 'post',
+        url: `http://localhost:65071/product/create`,
+        data: fd
+    }).then(function (response) {
+        console.log(response);
+    })
+    .catch(function (response) {
+        console.log(response);
+    });
+    //         axios.post(`http://localhost:65071/product/create`,  options ) 
+    //             .then(response => 
+    //                 console.log(response))
+    //             .catch((error) => {
+    //                 console.log(error)
+    //   })
         }
     },
 }

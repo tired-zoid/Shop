@@ -1,4 +1,4 @@
-using Hangfire;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -26,9 +26,6 @@ namespace Shop
         {
             string conString = Configuration.GetConnectionString("BloggingDatabase");
             services.AddDbContext<DataContext>(options => options.UseSqlServer(conString));
-
-            services.AddHangfire(options => options.UseSqlServerStorage(conString));
-            services.AddHangfireServer();
             services.AddTransient<IDbService, DbService>();
             services.AddTransient<IEmailService, EmailService>();
 
@@ -62,7 +59,6 @@ namespace Shop
             app.UseStatusCodePages();
             app.UseRouting();
 
-            app.UseHangfireDashboard("/dashborad");
 
             app.UseEndpoints(endpoints =>
             {

@@ -7,7 +7,7 @@ namespace Shop.Interfaces
 {
     public interface IDbService 
     {
-        IActionResult CreateProduct(Product product);
+        IActionResult CreateProduct(Product product, IFormFile uploadedFile);
 
         void DeleteProduct(int id );
         

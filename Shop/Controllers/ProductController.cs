@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Shop.Entities;
 using Shop.Interfaces;
 using System.Linq;
@@ -40,13 +41,13 @@ namespace Shop.Controllers
             _dbService.UpdateProduct(product);
         }
 
-        [HttpPost]
-        [Route("[controller]")]
-        public IActionResult Create(Product product)
-        {
-            _emailService.Send(product);
-            return _dbService.CreateProduct(product);
-        }
+        //[HttpPost]
+        //[Route("[controller]")]
+        //public IActionResult Create(Product product)
+        //{
+        //    _emailService.Send(product);
+        //    return _dbService.CreateProduct(product);
+        //}
 
         [HttpDelete]
         [Route("[controller]/{id}")]
@@ -57,19 +58,14 @@ namespace Shop.Controllers
         }
 
         [HttpPost]
-        [Route("[controller]/imageload")]
-        public  IActionResult AddFile([FromForm(Name = "image")] IFormFile uploadedFile)
-        {
-            _dbService.AddFile(uploadedFile);
-            return Ok();
-        }
-
-        [HttpPost]
         [Route("[controller]/create")]
-        public IActionResult CreateProduct(IFormFile uploadedFile, Product product)
+        public void CreateProduct([FromForm(Name = "data")] string data, [FromForm(Name = "image")] IFormFile uploadedFile)
         {
-            _dbService.AddFile(uploadedFile);
-            return _dbService.CreateProduct(product);
+            _ = new Product();
+            Product product = JsonConvert.DeserializeObject<Product>(data);
+            _dbService.CreateProduct(product, uploadedFile);
+            _emailService.Send(product);
+                   
         }
 
     }
